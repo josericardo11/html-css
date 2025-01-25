@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* weight =peso, height =altura e width =largura */
+body {
+    font-family: serif;
+    background-image: linear-gradient(to bottom, #CCC5B9, #403D39);
+    background-attachment: fixed;
+    /* 
+    Medidas absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas Relativas
+    em, ex, rem, vw, vh
+    16px geralmente = 1em
+    px e em melhores
+     */
+    font-size: 1.18em;
+    font-weight: lighter;
+    text-decoration: underline;
+    /* lighter normal bold bolder */
+
+}
+
+main {
+    background-color: #403D39;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+    height: 1000px;
+}
+
+h1 {
+    text-align: center;
+    color: #EB5E28;
+    /*shorthand
+    font-Style -> font-weight -> font-size -> font-family */
+    font: bold 3em serif
+    
+}
+
+h2 {
+    color: white;
+    font: italic bold 1.5em sans-serif;
+}
+
+p {
+    text-align: justify;
+    color: #FFFCF2;
+    font: 100 1em serif;
+}

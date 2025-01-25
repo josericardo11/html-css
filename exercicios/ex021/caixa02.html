@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(91, 89, 86);
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: antiquewhite;
+            padding: 3px;
+            margin: 10px;
+            box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.478);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(13, 0, 115);
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            margin: 20px;  
+            padding: 10px;   
+            border-radius: 15px 0px; 
+            box-shadow: 1px 2px 7px 4px black;   
+        }
+
+        article {
+            background-color: rgba(121, 119, 119, 0.396);
+            padding: 10px;
+            margin: 4px 4px 20px 4px;
+        }
+
+        article > aside {
+            background-color: rgb(124, 124, 124);
+            margin: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            display: inline-block;
+            background-color: white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        div#bolab {
+            display: inline-block;
+            background-color: white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            box-shadow: 3px 3px 4px 2px black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+                <article>
+                    <h1>Destruição</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error praesentium eum dicta quidem voluptate! Obcaecati ratione, odio, ex maiores pariatur blanditiis fugit similique in, necessitatibus velit officiis laborum error saepe.</p>
+                    <aside>
+                        <p>Escrito por Ken</p>
+                    </aside>
+                </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h1>Notícia sobre o Brasil</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis rerum eius laboriosam reprehenderit quam, temporibus eos in saepe est nihil, distinctio possimus error porro dolor quasi tenetur ea assumenda.</p>
+                <aside>
+                    <p>Artígo escrito por José</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo KSKING</p>
+    </footer>
+
+    <div id="bola"></div>
+    <div id="bolab"></div>
+</body>
+</html>
