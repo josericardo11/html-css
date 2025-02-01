@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            padding: 8px;
+        }
+
+        tr:nth-child(2n) {
+            background-color: gray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        col.cnome {
+            background-color: yellow;
+        }
+
+        col.cgrupo {
+            background-color: aqua;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="vermelho">
+        </colgroup>
+        <caption>Cadastros</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Ken</td>
+            <td>Masculino</td>
+            <td>21</td>
+            <td>Programação</td>
+        </tr>
+        <tr>
+            <td>tk</td>
+            <td>Feminino</td>
+            <td>19</td>
+            <td>Caféteira</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>Masculinno</td>
+            <td>17</td>
+            <td>Programação</td>
+        </tr>
+        <tr>
+            <td>Arkad</td>
+            <td>Masculino</td>
+            <td>32</td>
+            <td>Gestão</td>
+        </tr>
+    </table>
+</body>
+</html>
