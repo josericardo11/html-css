@@ -14,27 +14,27 @@
             width: 500px;
         }
 
-        .zebra {
-            background-color: gray;
-            color: white;
-        }
-
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+        
+        tr.zebra {
+            background-color: gray;
+            color: white;
         }
     </style>
 </head>
 <body>
     <table>
-        <thead class="zebra">
-            <tr>
+        <thead>
+            <tr class="zebra">
                 <th rowspan="2" scope="col">Área</th>
                 <th rowspan="2" scope="col">Disciplina</th>
                 <th colspan="2" scope="colgroup">Notas</th>
                 <th rowspan="2" scope="col">Média</th>
             </tr>
-            <tr>
+            <tr class="zebra">
                 <th>Nota 1</th>
                 <th>Nota 2</th>
             </tr>
@@ -83,8 +83,8 @@
                 <td>0.0</td>
             </tr>
         </tbody>
-        <tfoot class="zebra" style="text-align: left;">
-            <tr>
+        <tfoot style="text-align: left;">
+            <tr class="zebra">
                 <th colspan="4" scope="row">Média Humanas</th>
                 <td>0.0</td>
             </tr>
