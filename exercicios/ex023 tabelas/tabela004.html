@@ -11,38 +11,67 @@
 
         table {
             border-collapse: collapse;
+        } 
+
+        caption {
+            font-weight: bold;
         }
 
-        thead, tfoot, th {
-
-            background-color: rgba(0, 0, 0, 0.829);
-            color: white;
-        }
-
-        td {
-            border: 1px solid black;
+        td, th {
             padding: 10px;
+            border: 1px solid black;
         }
     </style>
 </head>
 <body>
+    <h1>Exercício de Tabela</h1>
     <table>
-        <caption>Tabela</caption>
+        <caption>Filme Favoritos</caption>
         <thead>
             <tr>
-                <th>Grupo</th>
+                <th scope="col">Grupo</th>
                 <th scope="col">Nomes</th>
-                <th scope="col" colspan="3">Filmes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</td>
-                <td>Ana Maria Dos Santos</td>
-                <td>Alien</td>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>alien</td>
                 <td>Rambo</td>
                 <td>Vingadores</td>
+            </tr>
+            <tr>
                 <td>Beatriz</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno</td>
+                <td>Intocaveis</td>
+                <td>Amnesia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
             </tr>
         </tbody>
         <tfoot>
