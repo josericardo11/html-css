@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formlário</title>
+</head>
+<body>
+    <h1>Teste de formuulário</h1>
+    <form action="cadrastro.php" autocomplete="off" method="post">
+        <p><label for="inome">Nome</label>
+        <input type="text" name="name" id="iname" required minlength="4" maxlength="14" placeholder="nome do usuário">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required minlength="6" maxlength="16" size="10px" placeholder="minímo 6 letras">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
