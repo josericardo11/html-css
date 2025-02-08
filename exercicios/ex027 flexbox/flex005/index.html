@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main {
+            display: flex;
+            width: 100vw;
+            height: 500px;
+            background-color: orange;
+
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main section#login {
+            width: 300px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <h1>Login</h1>
+        </section>
+    </main>
+</body>
+</html>
